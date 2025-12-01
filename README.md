@@ -194,6 +194,10 @@ This sequence is entirely text driven and fits the in universe lore for VisionBr
 
 ## Installation
 
+If you like to try without using command prompts i have packaged the game into a .EXE 
+go to releases and choose the latest release and download the zip file ?
+once downloaded extract somewhere on Harddrive and run the .exe 
+
 You can run VisionBreaker: Neurogrid Terminal in a Conda environment (recommended) or with plain Python and `pip`.
 
 ### Option 1: Using Conda (recommended)
@@ -215,7 +219,7 @@ You can run VisionBreaker: Neurogrid Terminal in a Conda environment (recommende
    - Either clone the repo:
 
      ```bash
-     git clone https://github.com/your-name/VisionBreaker-Neurogrid-Terminal-main.git
+     git clone https://github.com/your-name/VisionBreaker-Neurogrid-main.git
      ```
 
    - Or download the ZIP from GitHub and extract it somewhere on your drive.
@@ -223,7 +227,7 @@ You can run VisionBreaker: Neurogrid Terminal in a Conda environment (recommende
 4. **Change into the project folder**
 
    ```bash
-   cd path/to/VisionBreaker-Neurogrid-Terminal-main
+   cd path/to/VisionBreaker-Neurogrid-main
    ```
 
 5. **Install dependencies**
@@ -247,7 +251,7 @@ You can run VisionBreaker: Neurogrid Terminal in a Conda environment (recommende
 3. Open a terminal in the project folder:
 
    ```bash
-   cd path/to/VisionBreaker-Neurogrid-Terminal-main
+   cd path/to/VisionBreaker-Neurogrid-main
    ```
 
 4. Install the dependencies:
