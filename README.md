@@ -85,8 +85,6 @@ You start with **Emerald Stream** and unlock more as you solve puzzles.
 - `Solar Flare`  
   Hot orange blast with dark red background
 
-The actual palette values are defined in `COLOR_THEMES` inside the script, if you want to tweak them.
-
 ---
 
 ## Controls
