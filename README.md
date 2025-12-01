@@ -6,7 +6,7 @@
 ```
 cd path/to/Code
 pip install pygame
-python Matrix_Rain.py
+python codefall.py
 ```
 
 # *Enjoy* 
