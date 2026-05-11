@@ -1,228 +1,360 @@
 # VisionBreaker: Neurogrid Terminal
 
-VisionBreaker: Neurogrid Terminal is a cyberpunk terminal toy and logic puzzle game built with Pygame.
+**VisionBreaker: Neurogrid Terminal** is a cyber-hacking typing arcade game built around dense codefall visuals, command-based terminal gameplay, cipher puzzles, pressure systems, score progression, unlockable themes, and fast reaction typing.
 
-You boot into a simulated grid, watch cascading code rain, and jack into a hidden puzzle layer. Solve terminal riddles to neutralize the TRACE system and unlock new visual themes as the Neurogrid bends to your will.
+Step into the Neurogrid, open the terminal, and breach your way through a hostile mainframe before the system traces you.
 
-> Part ambient code rain visualizer, part minimal puzzle game.
-> 
-> Note: Contains flashing visuals, screen shake, and glitch effects. See Photosensitivity Warning below.
+What starts as a calm Matrix-style codefall experience becomes a full multi-stage hacking run where every command matters.
+
+**Break in. Steal the data. Defend the escape. Survive the Neurogrid.**
 
 ---
-<p align="center">
-  <img
-    src="https://github.com/user-attachments/assets/9f2fd6b4-f085-444a-ac15-3ab9f8d46ecf"
-    width="450"
-    alt="VisionBreaker: Neurogrid Terminal – boot sequence"
-  />
-</p>
 
 <p align="center">
   <img
-    src="https://github.com/user-attachments/assets/fea784b8-a423-4940-9277-96eb7c2549d1"
+    src="https://github.com/user-attachments/assets/0b3dd9c6-eb3e-4637-b3d4-361f9fc636c9"
     width="450"
-    alt="Main Window"
+    alt="VisionBreaker: Neurogrid Terminal"
   />
 </p>
+
 
 [![Downloads](https://img.shields.io/github/downloads/VisionDepth/VisionBreaker-Neurogrid/total?color=brightgreen)](https://github.com/VisionDepth/VisionBreaker-Neurogrid/releases)
 
+---
+
+## About
+
+VisionBreaker blends the feel of old-school typing games with a cyberpunk mainframe fantasy.
+
+It is part typing trainer, part arcade survival game, and part interactive hacking terminal. Players type commands, solve cipher locks, manage danger meters, extract data, and defend their escape stream from falling countertrace packets.
+
+The game begins in ambient free-hack mode where players can type words into the codefall. When ready, type `SCAN` to engage the mainframe and begin the real breach.
+
+---
+
+## Gameplay Overview
+
+VisionBreaker v3.0 introduces a complete 3-level gameplay run.
+
+### Level 1: Main Breach
+
+Reveal and attack the mainframe core.
+
+Type `SCAN` to reveal the firewall core, then use terminal commands to damage it, manage TRACE, solve cipher locks, and extract root access.
+
+Core commands:
+
+- `SCAN` reveals the mainframe core
+- `BREACH` damages the firewall core
+- `INJECT` deals heavier damage but increases TRACE risk
+- `SUPPRESS` lowers TRACE
+- `DECRYPT` opens a cipher puzzle
+- `EXTRACT` begins root access extraction once the core is weak
+
+The mainframe reacts with particles, cracks, flashing, warning pulses, system messages, screen shake, and TRACE pressure.
+
+### Level 2: Data Vault Infiltration
+
+Steal data from the vault before lockdown reaches 100%.
+
+After completing the main breach, the player enters the Data Vault. The goal is to extract 5 valid data fragments while avoiding corrupt packets and decoy nodes.
+
+Vault commands:
+
+- `PING` reveals vault nodes
+- `LOCK A-G` selects a node
+- `DECRYPT` opens a fragment cipher
+- `DOWNLOAD` extracts decrypted data
+- `PURGE` removes corrupt or decoy nodes
+- `MASK` slows vault lockdown
+
+Level 2 uses a separate **Vault Lockdown** pressure system.
+
+### Level 3: Countertrace Defense
+
+Defend your escape stream in a typing-shooter style final level.
+
+Falling threat packets move toward the escape stream. Type the displayed word to destroy each packet before it hits.
+
+Math packets also appear. For math packets, type the answer instead of the equation.
+
+Example:
+
+```text
+8+7
+```
+
+Type:
+
+```text
+15
+```
+
+Survive until the escape stream reaches 100%.
+
+---
 
 ## Features
 
-### Dynamic Code Rain Engine
-- High-density, resolution-adaptive code streams  
-- Glowing trails, binary mode, occasional glitch flickers, and camera shake effects  
-- Smooth fullscreen performance with optional slow-motion mode
+- Full cyber-hacking typing arcade gameplay
+- Complete 3-level gameplay run
+- Dense Matrix-style codefall visuals
+- Ambient free-hack mode before the breach starts
+- Command-based terminal controls
+- Reactive mainframe core
+- TRACE pressure system
+- Data vault infiltration mode
+- Vault lockdown system
+- Falling threat packet typing mode
+- Math packet challenges
+- Randomized cipher puzzles
+- Expanded puzzle pool
+- Built-in Operator Reference Card
+- Score, combo, and high score system
+- Expanded achievement system
+- Unlockable visual themes
+- Theme unlock progression
+- Particle bursts, screen shake, warning overlays, and system messages
+- Music and sound effect support
+- Fullscreen and windowed mode support
+- Graceful handling for missing audio files
 
-### Neurogrid Boot Sequence
-- Atmospheric diegetic startup screen  
-- Type commands to “awaken” the terminal or abort the connection
+---
 
-### Interactive Hack Console
-- Press `H` to open the **HACK>** prompt  
-- Type any phrase to inject it directly into the falling code  
-- Includes audio feedback for successful terminal submissions
+## Cipher Puzzles
 
-### Puzzle Mode & TRACE System
-- Press `P` to enter puzzle mode  
-- Solve eight original Neurogrid-themed puzzles using the **HACK>** console  
-- A rising TRACE bar increases pressure with:
-  - Passive time gain  
-  - Wrong answers  
-  - Optional hint usage  
-- Fully filled TRACE or multiple failures trigger a **critical system error**  
-- Correct answers reset TRACE and advance to the next challenge
+Cipher puzzles are part of both the Main Breach and Data Vault stages.
 
-### Theme Unlock Progression
-- Begin with a single visual theme  
-- Each solved puzzle unlocks an additional color theme  
-- Newly unlocked themes **auto-apply**, creating a dramatic visual shift  
-- Special vertical “THEME UNLOCKED” rain celebrates each milestone
+When a cipher opens:
 
-### Critical Error Events
-- Intense red-tint overlay, glitch bars, camera shake, and a large **SYSTEM FAILURE** banner  
-- Error sound effect and forced return to free mode  
-- Designed to feel like a terminal meltdown without breaking gameplay
+- TRACE pauses while the puzzle is active
+- A large readable cipher panel appears
+- Type the answer directly into the `HACK>` console
+- Type `HINT` for help
+- Wrong answers do not add TRACE
+- Puzzles are randomized to keep runs from feeling identical
 
-### Smart Hardware Behavior
-- Launches in fullscreen at your display’s native resolution  
-- Toggle between fullscreen and windowed mode at any time  
-- Gracefully handles missing audio files without crashing
+Puzzle types include:
+
+- Binary
+- Hexadecimal
+- Logic
+- Sequences
+- Quick math
+- VisionBreaker command knowledge
+- Cybersecurity-themed word prompts
+- System flow questions
+
+---
+
+## Operator Reference Card
+
+Press `F1` during gameplay to open the built-in Operator Card.
+
+The Operator Card includes:
+
+- Level 1 command reference
+- Level 2 command reference
+- Level 3 typing rules
+- Binary quick help
+- Hex quick help
+- Logic quick help
+- Common cipher words
+- Sequence examples
+- Quick gameplay tips
+
+This is meant to feel like an old-school in-game reference manual for players who want help during ciphers or commands.
+
+---
+
+## Achievements
+
+VisionBreaker v3.0 includes an expanded achievement system.
+
+Achievement examples include:
+
+- First Hack
+- Scanner Online
+- First Breach
+- Cipher Breaker
+- Code Breaker
+- Combo Starter
+- Combo Master
+- Combo Overdrive
+- Packet Runner
+- Firewall Breaker
+- Neurogrid Operator
+- Digital Phantom
+- Trace Survivor
+- Clean Breach
+- Root Access
+- Vault Ping
+- Data Thief
+- Vault Runner
+- Ghost in the Vault
+- Math Packet Smasher
+- Virus Hunter
+- Perfect Escape
+- Countertrace Defender
+- Neurogrid Escaped
+- Theme Collector
+
+---
+
+## Unlockable Themes
+
+VisionBreaker includes multiple unlockable visual themes.
+
+Themes can unlock through score milestones, level progress, and full-run completion.
+
+Theme examples:
+
+- Cyber Ice
+- Toxic Lime
+- Deep Matrix
+- Blue Firewall
+- Crimson Trace
+- Golden Core
+- Void Purple
+- Pink Glitch
+- White Terminal
+- Blood Moon
+- Quantum Teal
+- Root Phantom
+- Countertrace Red
+- Vault Gold
+- Neurogrid Whiteout
 
 ---
 
 ## Controls
 
-### General
-- **Esc**  
-  - Close hack console  
-  - Exit puzzle mode  
-  - Quit the program (when not in console/puzzle)
+### General Controls
 
-- **F11**  
-  Toggle fullscreen/windowed mode
-
-- **Space**  
-  Pause or resume the code rain animation  
-  *(Critical error visuals and shake still animate while paused)*
-
----
-
-### Visual & Rain Controls
-- **C** – Cycle through unlocked color themes  
-- **Up / Down Arrow** – Increase or decrease global rain speed  
-- **B** – Toggle slow-motion mode  
-- **N** – Toggle binary mode (`0` and `1` rain only)  
-- **S** – Trigger a short manual camera shake  
-- **E** – Trigger a critical system error on demand
-
----
+| Key | Action |
+| --- | --- |
+| `Enter` | Continue from boot, start next level, submit terminal input |
+| `Esc` | Pause, close console, or exit cipher mode |
+| `F11` | Toggle fullscreen or windowed mode |
+| `F1` | Open or close Operator Card |
+| `TAB` | Toggle UI |
+| `C` | Cycle unlocked themes |
+| `Up Arrow` | Increase code rain speed |
+| `Down Arrow` | Decrease code rain speed |
+| `B` | Toggle slow-motion mode |
+| `N` | Toggle binary mode |
+| `H` | Open or clear the hack console |
+| `P` | Manually open or exit cipher mode |
+| `F12` | Save screenshot |
 
 ### Hack Console
-- **H** – Open the **HACK>** input line  
-- **Enter** (while console is open)  
-  - **Free mode:**  
-    - Spawn your typed phrase as falling vertical text  
-    - Play confirm sound  
-    - Close console  
-  - **Puzzle mode:**  
-    - Submit your answer for the current puzzle
 
-- **Backspace** – Delete last character  
-- **Esc** – Cancel hack entry and close console
+Use the `HACK>` console to type commands, puzzle answers, and Level 3 targets.
 
----
+Before `SCAN`, typed words are sent into the codefall as ambient free-hack echoes.
 
-### Puzzle Mode & TRACE
-- **P** – Enter puzzle mode from free mode
+After `SCAN`, the terminal becomes the main command input for the game.
 
-When puzzle mode is active:
-- A dynamic **TRACE bar** appears (top-right)  
-- The current **puzzle prompt** displays near the bottom  
-- You reply exclusively through the **HACK>** console  
-- Type **HINT** (and press Enter) to reveal a clue  
-  - Hints cost TRACE, making them a strategic choice
+### Level 1 Commands
 
-Failure conditions:
-- TRACE bar fills completely  
-- Repeated incorrect answers
+```text
+SCAN
+BREACH
+INJECT
+SUPPRESS
+DECRYPT
+EXTRACT
+STATUS
+HELP
+```
 
-Success conditions:
-- **Correct answers** show “ACCESS GRANTED,” reset TRACE, and move to the next puzzle  
-- Completing all puzzles:
-  - Neutralizes TRACE  
-  - Unlocks all earned color themes  
-  - Returns you to free mode
+### Level 2 Commands
 
+```text
+PING
+LOCK A-G
+DECRYPT
+DOWNLOAD
+PURGE
+MASK
+STATUS
+HELP
+```
 
----
+### Level 3 Input
 
+Type falling threat words exactly as shown.
 
----
+For math packets, type the answer.
 
-## Boot Screen
+Examples:
 
-On launch you see a green boot sequence for the Neurogrid terminal.
-
-- Wait for the boot lines to fully reveal
-- The bottom of the screen will prompt you with a choice
-- Type the required word and press Enter to jack in
-- Or type the alternative word to close the program instead
-
-This sequence is entirely text driven and fits the in universe lore for VisionBreaker.
+```text
+FIREWALL
+TRACE
+VIRUS
+15
+24
+```
 
 ---
-
-## Requirements
-
-- Python 3.9 or newer
-- Pygame
 
 ## Installation
 
-### If you like to try without using command prompts i have packaged the game into a .EXE 
-- go to releases and choose the latest release and download the zip file
-- once downloaded extract somewhere on Harddrive
-- run the .exe 
+### Option 1: Windows EXE Release
 
-You can run VisionBreaker: Neurogrid Terminal in a Conda environment (recommended) or with plain Python and `pip`.
+If you want to play without using command prompts:
 
-### Option 1: Using Conda (recommended)
+1. Go to the latest GitHub release.
+2. Download the release ZIP.
+3. Extract the ZIP somewhere on your hard drive.
+4. Run the `.exe`.
 
-1. **Create a new environment**
+### Option 2: Using Conda
+
+1. Create a new environment:
 
    ```bash
    conda create -n VisionBreaker python=3.11
    ```
 
-2. **Activate the environment**
+2. Activate the environment:
 
    ```bash
    conda activate VisionBreaker
    ```
 
-3. **Download the game**
-
-   - Either clone the repo:
-
-     ```bash
-     git clone https://github.com/your-name/VisionBreaker-Neurogrid-main.git
-     ```
-
-   - Or download the ZIP from GitHub and extract it somewhere on your drive.
-
-4. **Change into the project folder**
+3. Clone the repository:
 
    ```bash
-   cd path/to/VisionBreaker-Neurogrid-main
+   git clone https://github.com/your-name/VisionBreaker-Neurogrid-main.git
    ```
 
-5. **Install dependencies**
+4. Open the project folder:
+
+   ```bash
+   cd VisionBreaker-Neurogrid-main
+   ```
+
+5. Install dependencies:
 
    ```bash
    pip install -r requirements.txt
    ```
 
-6. **Run the game**
+6. Run the game:
 
    ```bash
    python VisionBreaker.py
    ```
 
----
+### Option 3: Plain Python and pip
 
-### Option 2: Plain Python and pip
-
-1. Make sure you have **Python 3.10+** installed and on your PATH.
-2. Download or clone the repository and extract it.
-3. Open a terminal in the project folder:
-
-   ```bash
-   cd path/to/VisionBreaker-Neurogrid-main
-   ```
-
-4. Install the dependencies:
+1. Install Python 3.10 or newer.
+2. Download or clone the repository.
+3. Open a terminal in the project folder.
+4. Install dependencies:
 
    ```bash
    pip install -r requirements.txt
@@ -233,6 +365,36 @@ You can run VisionBreaker: Neurogrid Terminal in a Conda environment (recommende
    ```bash
    python VisionBreaker.py
    ```
+
+---
+
+## Requirements
+
+- Python 3.10 or newer
+- Pygame
+- Windows recommended for the packaged `.exe`
+
+Audio files are optional. Missing audio assets are handled gracefully.
+
+---
+
+## License
+
+VisionBreaker: Neurogrid Terminal is proprietary software.
+
+Unless otherwise stated in a separate license file:
+
+- Personal play/use is allowed
+- Redistribution is not allowed
+- Reuploading is not allowed
+- Reselling is not allowed
+- Modifying or repackaging the game for release is not allowed
+- The VisionBreaker name, logo, artwork, branding, and related materials may not be reused without permission
+
+Gameplay videos, screenshots, reviews, and non-commercial streams are allowed as long as they do not redistribute the game files or claim ownership of the project.
+
+For permission requests, contact the project owner.
+
 ---
 
 ## Photosensitivity Warning
@@ -246,6 +408,19 @@ This project contains:
 
 These effects may trigger discomfort or seizures in people with photosensitive epilepsy or other light sensitivities.
 
-If you experience dizziness, blurred vision, headache, nausea, or any kind of discomfort while playing, stop using the program immediately and rest. If symptoms persist, seek medical advice.
+If you experience dizziness, blurred vision, headache, nausea, or any discomfort while playing, stop using the program immediately and rest. If symptoms persist, seek medical advice.
 
-If you are prone to photosensitive seizures or visual migraines, you should talk to a medical professional before using this program or avoid it entirely.
+---
+
+## Summary
+
+VisionBreaker is no longer just codefall.
+
+It is now a full mainframe breach typing arcade game.
+
+Type commands.  
+Break the firewall.  
+Manage TRACE.  
+Decrypt the vault.  
+Defend the escape stream.  
+Survive the Neurogrid.
